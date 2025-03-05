@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption Ucapan Ulang Tahun</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        img {
+            width: 100px; /* Ubah ukuran sesuai kebutuhan */
+            height: auto; /* Pastikan proporsi tetap terjaga */
+            border-radius: 10px;
+            margin: 0 auto 20px; /* Pusatkan gambar dan beri margin bawah */
+            display: block; /* Ubah menjadi block untuk memusatkan */
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background-color: #6a00ff; /* Warna tombol yang lebih menarik */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #39097d; /* Warna saat hover */
+        }
+        .output {
+            margin-top: 20px;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            white-space: pre-wrap;
+            position: relative;
+            word-wrap: break-word; /* Ensure long words break to fit the container */
+        }
+        .copy-button {
+            margin-top: 10px;
+            background-color: #6a00ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .copy-button:hover {
+            background-color: #39097d;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            button, .copy-button {
+                font-size: 14px;
+                padding: 10px;
+            }
+            input[type="text"], select {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="gambar/Logo Unesa.png" alt="UNESA" title="UNESA">
+        <h1>Caption Ucapan Ulang Tahun</h1>
+
+        <label for="fullname">Nama Lengkap</label>
+        <select id="fullname">
+            <option value="Aditya Eka Febriano">Aditya Eka Febriano</option>
+            <option value="Ahmad Rohman Hakim">Ahmad Rohman Hakim</option>
+            <option value="Ahmad Yasir Mubarok">Ahmad Yasir Mubarok</option>
+            <option value="Aisyah Hudda Nurusamawati">Aisyah Hudda Nurusamawati</option>
+            <option value="Amalina Lutfiani Putri">Amalina Lutfiani Putri</option>
+            <option value="Archan Syah">Archan Syah</option>
+            <option value="Astri Meilana">Astri Meilana</option>
+            <option value="Astika Sri Mulyani">Astika Sri Mulyani</option>
+            <option value="Cahyaning Tyas Citra Prasinta">Cahyaning Tyas Citra Prasinta</option>
+            <option value="Cahyo Faizz Khafidzi">Cahyo Faizz Khafidzi</option>
+            <option value="Citra Wahyu Nurmala">Citra Wahyu Nurmala</option>
+            <option value="Dani Beckham Syahputra">Dani Beckham Syahputra</option>
+            <option value="David Solagratia Gaspersz">David Solagratia Gaspersz</option>
+            <option value="Ditha Dwi Oktaviarni">Ditha Dwi Oktaviarni</option>
+            <option value="Dwi Anggra Fardani">Dwi Anggra Fardani</option>
+            <option value="Faizatul Nur Fadhilah">Faizatul Nur Fadhilah</option>
+            <option value="Fardhyna Mey Anggraini">Fardhyna Mey Anggraini</option>
+            <option value="Faricha Ulin Nuha">Faricha Ulin Nuha</option>
+            <option value="Firdha Putri Anggraini">Firdha Putri Anggraini</option>
+            <option value="Gideon Kurniawan Putra">Gideon Kurniawan Putra</option>
+            <option value="Gita Putri Ramawati">Gita Putri Ramawati</option>
+            <option value="Greta Arta Mevia">Greta Arta Mevia</option>
+            <option value="Hana Nimatul Rizky">Hana Nimatul Rizky</option>
+            <option value="Hannum Noura Falikhulisba">Hannum Noura Falikhulisba</option>
+            <option value="Imani Nuril Hakiki">Imani Nuril Hakiki</option>
+            <option value="Intan Nurlaili">Intan Nurlaili</option>
+            <option value="Iqbal Julianto Jatmiko">Iqbal Julianto Jatmiko</option>
+            <option value="Ishmah Dinina Aulawiyah">Ishmah Dinina Aulawiyah</option>
+            <option value="Isnawati">Isnawati</option>
+            <option value="Izzana Turohma">Izzana Turohma</option>
+            <option value="Jihan Romadhon">Jihan Romadhon</option>
+            <option value="Khirotus Tsaniya Syarava Pangestu">Khirotus Tsaniya Syarava Pangestu</option>
+            <option value="Kharisma Nur Farahana">Kharisma Nur Farahana</option>
+            <option value="Lady Fatimatus Zaroh">Lady Fatimatus Zaroh</option>
+            <option value="Lailatun Nafisah">Lailatun Nafisah</option>
+            <option value="Lintang Virginia">Lintang Virginia</option>
+            <option value="M Sayyidani Alifuddin U">M Sayyidani Alifuddin U</option>
+            <option value="Maulidati Assalwa">Maulidati Assalwa</option>
+            <option value="Maretha Extrantya Rahmawati">Maretha Extrantya Rahmawati</option>
+            <option value="Meris Aulia Sandi">Meris Aulia Sandi</option>
+            <option value="Mohamad Soca Indraswara">Mohamad Soca Indraswara</option>
+            <option value="Muhammad Abu Abdillah">Muhammad Abu Abdillah</option>
+            <option value="Mukhammad Junizar Firmansyah">Mukhammad Junizar Firmansyah</option>
+            <option value="Nabila Azhara Sausan">Nabila Azhara Sausan</option>
+            <option value="Nadhirra Shaffa Aprillia Faatiha">Nadhirra Shaffa Aprillia Faatiha</option>
+            <option value="Nadiya Ayu Hanifa">Nadiya Ayu Hanifa</option>
+            <option value="Najwa Auliya Nadian Syiar">Najwa Auliya Nadian Syiar</option>
+            <option value="Najwa Salsyabilah">Najwa Salsyabilah</option>
+            <option value="Naila Minkhatul Ulya">Naila Minkhatul Ulya</option>
+            <option value="Norma Marlindasari">Norma Marlindasari</option>
+            <option value="Noor Kansyah Saylendra">Noor Kansyah Saylendra</option>
+            <option value="Nur Intan Sari">Nur Intan Sari</option>
+            <option value="Nuris Sa adah">Nuris Sa adah</option>
+            <option value="Puji Dwi Seftiani">Puji Dwi Seftiani</option>
+            <option value="Putri Fiisyatil Huludah As Syanis">Putri Fiisyatil Huludah As Syanis</option>
+            <option value="Rangga Christian Wibowo">Rangga Christian Wibowo</option>
+            <option value="Ratu Faradiva Utojo">Ratu Faradiva Utojo</option>
+            <option value="Rengganis Saurin">Rengganis Saurin</option>
+            <option value="Rendy Maulana Yaqin">Rendy Maulana Yaqin</option>
+            <option value="Resi Prasasti">Resi Prasasti</option>
+            <option value="Rhefanda Putri Sugiana">Rhefanda Putri Sugiana</option>
+            <option value="Siti Putri Lailiya">Siti Putri Lailiya</option>
+            <option value="Sonia Handayani">Sonia Handayani</option>
+            <option value="Syntia Nur Adinda">Syntia Nur Adinda</option>
+            <option value="Tantri Mustikoweni">Tantri Mustikoweni</option>
+            <option value="Ulfi Fitrotun Amalia">Ulfi Fitrotun Amalia</option>
+            <option value="Umi Khanifah">Umi Khanifah</option>
+            <option value="Veronika Mendekarina Pardede">Veronika Mendekarina Pardede</option>
+            <option value="Wiwin At Milla">Wiwin At Milla</option>
+            <option value="Yoga Ari Anggoro">Yoga Ari Anggoro</option>
+            <option value="Yolla Eka Octavia">Yolla Eka Octavia</option>
+            <option value="Yuyun Shofiyati">Yuyun Shofiyati</option>
+            <option value="Zaenal Arifin">Zaenal Arifin</option>
+            <option value="Zahro Oktsabilah">Zahro Oktsabilah</option>
+            <option value="Zidna Rizkial Khusna">Zidna Rizkial Khusna</option>
+            <option value="Zulfa Afina Putri Rusyda">Zulfa Afina Putri Rusyda</option>
+            <option value="Zuyina Fitria Isnaini">Zuyina Fitria Isnaini</option>
+            <option value="Zuyina Suci Awalia">Zuyina Suci Awalia</option>
+            <option value="Faizatul Nur Fadhilah">Faizatul Nur Fadhilah</option>
+        </select>
+
+        <label for="shortname">Nama Pendek</label>
+        <input type="text" id="shortname" placeholder="Masukkan Nama Pendek">
+
+        <label for="position">Jabatan</label>
+        <select id="position">
+            <option value="KETUA UMUM">KETUA UMUM</option>
+            <option value="WAKIL KETUA UMUM">WAKIL KETUA UMUM</option>
+            <option value="SEKRETARIS 1">SEKRETARIS 1</option>
+            <option value="SEKRETARIS 2">SEKRETARIS 2</option>
+            <option value="BENDAHARA 1">BENDAHARA 1</option>
+            <option value="BENDAHARA 2">BENDAHARA 2</option>
+            <option value="KADEP PSDM">PSDM KADEP</option>
+            <option value="WAKADEP PSDM">PSDM WAKADEP</option>
+            <option value="STAF PSDM">PSDM STAF</option>
+            <option value="KADEP PENGMAS">PENGMAS KADEP</option>
+            <option value="WAKADEP PENGMAS">PENGMAS WAKADEP</option>
+            <option value="STAF PENGMAS">PENGMAS STAF</option>
+            <option value="KADEP KOMINFO">KOMINFO KADEP</option>
+            <option value="WAKADEP KOMINFO">KOMINFO WAKADEP</option>
+            <option value="STAF KOMINFO">KOMINFO STAF</option>
+            <option value="KADEP BAKMIN">BAKMIN KADEP</option>
+            <option value="WAKADEP BAKMIN">BAKMIN WAKADEP</option>
+            <option value="STAF BAKMIN">BAKMIN STAF</option>
+            <option value="KADEP REMITRA">REMITRA KADEP</option>
+            <option value="WAKADEP REMITRA">REMITRA WAKADEP</option>
+            <option value="STAF REMITRA">REMITRA STAF</option>
+        </select>
+
+        <label for="iglink">Link Instagram</label>
+        <input type="text" id="iglink" placeholder="Masukkan Link Instagram">
+
+        <button onclick="generateCaption()">Buat Caption</button>
+
+        <div class="output" id="output"></div>
+        <button class="copy-button" id="copyButton" onclick="copyCaption()" style="display:none;">Salin Caption</button>
+    </div>
+
+    <script>
+        function generateCaption() {
+            const fullName = document.getElementById('fullname').value;
+            const shortName = document.getElementById('shortname').value;
+            const position = document.getElementById('position').value;
+            const igLink = document.getElementById('iglink').value;
+
+            const caption = `🎉🎂 *[HAPPY BIRTHDAY]*🎂🎉\n\nHappy Birthday *${fullName} - ${position}*🌟\n\nSemoga Kak ${shortName} selalu diberikan kesehatan, kebahagiaan, dan kesuksesan di setiap langkahnya. Di hari spesial ini, semoga semakin bersinar dan berprestasi. Teruslah menjadi inspirasi bagi kita semua, dan tetap semangat dalam berkarya bersama *Formadiksi KIP-K UNESA Periode 2025/2026*🎁\n\nSelamat ulang tahun sekali lagi ka ${shortName}, semoga sukses selalu dan mimpi-mimpinya tercapai! ✨🎉\n\n*📦Check it out*\n${igLink}\n\n#FormadiksiKipkUNESA #FormadiksiKipk2025 \n#UNESA #Happybirthday #BersinergiBerprestasiUntukNegeri`;
+
+            document.getElementById('output').innerText = caption;
+            document.getElementById('copyButton').style.display = 'block';
+        }
+
+        function copyCaption() {
+            const captionText = document.getElementById('output').innerText;
+            const tempTextarea = document.createElement('textarea');
+            tempTextarea.value = captionText;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextarea);
+            alert('Caption berhasil disalin ke clipboard!');
+        }
+    </script>
+
+</body>
+</html>
